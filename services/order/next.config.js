@@ -7,7 +7,7 @@ const nextConfig = {
         name: 'order',
         filename: 'static/chunks/remoteEntry.js',
         exposes: {
-          './title': './components/Title.tsx',
+          './Title': './components/Title.tsx',
         },
       }),
     );
