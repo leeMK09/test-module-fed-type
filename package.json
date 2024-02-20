@@ -5,7 +5,8 @@
   "version": "0.0.0",
   "scripts": {
     "start": "concurrently \"npm --prefix services/order run start\" \"npm --prefix services/host run start\"",
-    "build": "concurrently \"npm --prefix services/order run build\" \"npm --prefix services/host run build\""
+    "build": "concurrently \"npm --prefix services/order run build\" \"npm --prefix services/host run build\"",
+    "pkg-i": "concurrently \"cd services/order && pnpm i\" \"cd services/host && pnpm i\""
   },
   "dependencies": {
     "concurrently": "^7.6.0"

@@ -16,7 +16,7 @@ const nextConfig = {
   webpack: (config, options) => {
     config.plugins.push(
       new NextFederationPlugin(federationConfig),
-      new FederatedTypesPlugin(federationConfig)
+      // new FederatedTypesPlugin(federationConfig)
     );
     return config;
   }
